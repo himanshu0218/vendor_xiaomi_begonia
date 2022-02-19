@@ -148,3 +148,13 @@ prebuilt_etc_xml {
 	soc_specific: true,
 }
 
+android_app_import {
+        name: "EngineerMode", 
+        owner: "xiaomi",
+        apk: "proprietary/priv-app/EngineerMode/EngineerMode.apk", 
+	certificate: "platform", 
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
